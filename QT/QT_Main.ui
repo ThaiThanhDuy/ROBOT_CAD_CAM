@@ -1,0 +1,1117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainPage</class>
+ <widget class="QMainWindow" name="MainPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1900</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>15</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(10, 5, 27);
+color: white;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="Main_frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>50</y>
+      <width>1890</width>
+      <height>980</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(10, 5, 27);
+
+
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QTabWidget" name="Toolbar">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>390</width>
+       <height>950</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(11, 14, 30);
+color: white;
+border-radius: 1px;
+
+
+</string>
+     </property>
+     <property name="currentIndex">
+      <number>2</number>
+     </property>
+     <widget class="QWidget" name="tab_model">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(11, 14, 30);
+color: white;
+border-radius: 10px;
+
+</string>
+      </property>
+      <attribute name="title">
+       <string>Model</string>
+      </attribute>
+      <widget class="QWidget" name="widget_tab_model" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>390</width>
+         <height>910</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(11, 14, 30);
+color: white;
+border-radius: 1px;
+
+</string>
+       </property>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>10</y>
+          <width>89</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(17, 17, 27);
+color: white;</string>
+        </property>
+        <property name="text">
+         <string>Import</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>50</y>
+          <width>200</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QCheckBox{
+	background-color: rgb(11, 14, 30);
+	border-radius: 15px;
+font: 75 15pt &quot;MS Shell Dlg 2&quot;;
+}
+
+QCheckBox::indicator {
+    
+    border-radius: 5px; /* Đặt độ cong cho ô tích */
+    width: 20px; /* Đặt chiều rộng của ô tích */
+    height: 20px; /* Đặt chiều cao của ô tích */
+	border: 2px solid rgb(0, 0, 0);
+	position: absolute; /* Sử dụng position để định vị */
+    top: 0; /* Di chuyển indicator lên phía trên */
+left:10;
+}
+
+QCheckBox::indicator:unchecked{
+	background-color: rgb(255, 255, 255);
+
+}
+QCheckBox::indicator:checked{
+	
+	
+background-color: rgb(106, 255, 153);
+
+}
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>Full Model</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_2">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>90</y>
+          <width>200</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QCheckBox{
+	background-color: rgb(11, 14, 30);
+	border-radius: 15px;
+font: 75 15pt &quot;MS Shell Dlg 2&quot;;
+}
+
+QCheckBox::indicator {
+    
+    border-radius: 5px; /* Đặt độ cong cho ô tích */
+    width: 20px; /* Đặt chiều rộng của ô tích */
+    height: 20px; /* Đặt chiều cao của ô tích */
+	border: 2px solid rgb(0, 0, 0);
+	position: absolute; /* Sử dụng position để định vị */
+    top: 0; /* Di chuyển indicator lên phía trên */
+left:10;
+}
+
+QCheckBox::indicator:unchecked{
+	background-color: rgb(255, 255, 255);
+
+}
+QCheckBox::indicator:checked{
+	
+	
+background-color: rgb(106, 255, 153);
+
+}
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>Part</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_3">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>120</y>
+          <width>201</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QCheckBox{
+	background-color: rgb(11, 14, 30);
+	border-radius: 15px;
+font: 75 15pt &quot;MS Shell Dlg 2&quot;;
+}
+
+QCheckBox::indicator {
+    
+    border-radius: 5px; /* Đặt độ cong cho ô tích */
+    width: 20px; /* Đặt chiều rộng của ô tích */
+    height: 20px; /* Đặt chiều cao của ô tích */
+	border: 2px solid rgb(0, 0, 0);
+	position: absolute; /* Sử dụng position để định vị */
+    top: 0; /* Di chuyển indicator lên phía trên */
+left:10;
+}
+
+QCheckBox::indicator:unchecked{
+	background-color: rgb(255, 255, 255);
+
+}
+QCheckBox::indicator:checked{
+	
+	
+background-color: rgb(106, 255, 153);
+
+}
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>WorkPiece</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_4">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>150</y>
+          <width>201</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QCheckBox{
+	background-color: rgb(11, 14, 30);
+	border-radius: 15px;
+font: 75 15pt &quot;MS Shell Dlg 2&quot;;
+}
+
+QCheckBox::indicator {
+    
+    border-radius: 5px; /* Đặt độ cong cho ô tích */
+    width: 20px; /* Đặt chiều rộng của ô tích */
+    height: 20px; /* Đặt chiều cao của ô tích */
+	border: 2px solid rgb(0, 0, 0);
+	position: absolute; /* Sử dụng position để định vị */
+    top: 0; /* Di chuyển indicator lên phía trên */
+left:10;
+}
+
+QCheckBox::indicator:unchecked{
+	background-color: rgb(255, 255, 255);
+
+}
+QCheckBox::indicator:checked{
+	
+	
+background-color: rgb(106, 255, 153);
+
+}
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>Fixtures</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_5">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>180</y>
+          <width>201</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QCheckBox{
+	background-color: rgb(11, 14, 30);
+	border-radius: 15px;
+font: 75 15pt &quot;MS Shell Dlg 2&quot;;
+}
+
+QCheckBox::indicator {
+    
+    border-radius: 5px; /* Đặt độ cong cho ô tích */
+    width: 20px; /* Đặt chiều rộng của ô tích */
+    height: 20px; /* Đặt chiều cao của ô tích */
+	border: 2px solid rgb(0, 0, 0);
+	position: absolute; /* Sử dụng position để định vị */
+    top: 0; /* Di chuyển indicator lên phía trên */
+left:10;
+}
+
+QCheckBox::indicator:unchecked{
+	background-color: rgb(255, 255, 255);
+
+}
+QCheckBox::indicator:checked{
+	
+	
+background-color: rgb(106, 255, 153);
+
+}
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>Restrictions</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_Machining">
+      <attribute name="title">
+       <string>Machining</string>
+      </attribute>
+      <widget class="QWidget" name="widget_tab_Machining" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>391</width>
+         <height>911</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(11, 14, 30);
+color: white;
+
+border-radius: 10px;</string>
+       </property>
+       <widget class="QPushButton" name="btn_settings_mc">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>89</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+QPushButton#btn_settings_mc{
+	background-color: rgb(17, 17, 27);
+	color: white;
+
+}
+QPushButton#btn_settings_mc:pressed{
+ background-color:rgba( 0, 135, 255);
+}</string>
+        </property>
+        <property name="text">
+         <string>Settings</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="widget_arm" native="true">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>60</y>
+          <width>361</width>
+          <height>481</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(17, 17, 42)</string>
+        </property>
+        <widget class="QLabel" name="label">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>0</y>
+           <width>181</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Thông số </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>60</y>
+           <width>85</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Tốc độ dao :</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_3">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>120</y>
+           <width>90</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Vị trí khớp 0 :</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_4">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>140</y>
+           <width>90</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Vị trí khớp 1 :</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_5">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>160</y>
+           <width>90</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Vị trí khớp 2:</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_6">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>180</y>
+           <width>90</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Vị trí khớp 3:</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_7">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>200</y>
+           <width>90</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Vị trí khớp 4:</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_8">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>220</y>
+           <width>90</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Vị trí khớp 5:</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_9">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>240</y>
+           <width>90</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Vị trí khớp 6:</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_10">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>80</y>
+           <width>85</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Vị trí  TCP :</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_13">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>40</y>
+           <width>110</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Trạng thái dao :</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_2">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>140</y>
+           <width>60</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(17, 17, 27);
+color: white;</string>
+         </property>
+         <property name="text">
+          <string>-000.00</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_3">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>160</y>
+           <width>60</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(17, 17, 27);
+color: white;</string>
+         </property>
+         <property name="text">
+          <string>-000.00</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_4">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>180</y>
+           <width>60</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(17, 17, 27);
+color: white;</string>
+         </property>
+         <property name="text">
+          <string>-000.00</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_5">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>120</y>
+           <width>60</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(17, 17, 27);
+color: white;</string>
+         </property>
+         <property name="text">
+          <string>-000.00</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_6">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>40</y>
+           <width>60</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(17, 17, 27);
+color: white;</string>
+         </property>
+         <property name="text">
+          <string>000000</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_7">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>60</y>
+           <width>60</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(17, 17, 27);
+color: white;</string>
+         </property>
+         <property name="text">
+          <string>000000</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_8">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>80</y>
+           <width>60</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(17, 17, 27);
+color: white;</string>
+         </property>
+         <property name="text">
+          <string>000000</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_9">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>200</y>
+           <width>60</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(17, 17, 27);
+color: white;</string>
+         </property>
+         <property name="text">
+          <string>-000.00</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_10">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>220</y>
+           <width>60</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(17, 17, 27);
+color: white;</string>
+         </property>
+         <property name="text">
+          <string>-000.00</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_11">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>240</y>
+           <width>60</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(17, 17, 27);
+color: white;</string>
+         </property>
+         <property name="text">
+          <string>-000.00</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_Simulation">
+      <attribute name="title">
+       <string>Simulation</string>
+      </attribute>
+      <widget class="QWidget" name="widget_tab_Simulation" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>391</width>
+         <height>911</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(11, 14, 30);
+color: white;
+border-radius: 10px;
+
+</string>
+       </property>
+       <widget class="QPushButton" name="btn_play_simulation">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>20</y>
+          <width>31</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#btn_play_simulation{
+	background-color: rgb(17, 17, 27);
+	color: white;
+
+}
+QPushButton#btn_play_simulation:pressed{
+ background-color:rgba( 0, 135, 255);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../Icon/icon_play.png</normaloff>../Icon/icon_play.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>20</y>
+          <width>60</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(17, 17, 27);
+color: white;</string>
+        </property>
+        <property name="text">
+         <string>Plan</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="widget" native="true">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>361</width>
+          <height>551</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(17, 17, 42)</string>
+        </property>
+        <widget class="QLabel" name="label_11">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>10</y>
+           <width>161</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Đường chạy dao</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QPushButton" name="pushButton_9">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>90</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(17, 17, 27);
+color: white;
+boder-radius : 10px;</string>
+        </property>
+        <property name="text">
+         <string>ToolPath</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>20</y>
+          <width>31</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../Icon/forward-icon.png</normaloff>../Icon/forward-icon.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_10">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>20</y>
+          <width>31</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../Icon/backward-icon.png</normaloff>../Icon/backward-icon.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_Excute">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(11, 14, 30);
+color: white;
+
+</string>
+      </property>
+      <attribute name="title">
+       <string>Excute</string>
+      </attribute>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>60</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(17, 17, 27);
+color: white;</string>
+       </property>
+       <property name="text">
+        <string>Excute</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_6">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>71</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(17, 17, 27);
+color: white;</string>
+       </property>
+       <property name="text">
+        <string>Connect</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="rvizContainer" native="true">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>50</y>
+       <width>1391</width>
+       <height>921</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(11, 14, 30);
+border-radius: 10px;</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="rvizContainer_2" native="true">
+     <property name="geometry">
+      <rect>
+       <x>1830</x>
+       <y>50</y>
+       <width>50</width>
+       <height>921</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(11, 14, 30);
+border-radius: 10px;</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_name_file">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>-10</y>
+      <width>231</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>25</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>ROBOT ARM</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1900</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew_FIle"/>
+    <addaction name="actionOpen_File"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionSave_as"/>
+    <addaction name="actionImport_File"/>
+    <addaction name="actionExport"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionCovert"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuView"/>
+   <addaction name="menuSettings"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNew_FIle">
+   <property name="text">
+    <string>New File</string>
+   </property>
+  </action>
+  <action name="actionOpen_File">
+   <property name="text">
+    <string>Open File</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionSave_as">
+   <property name="text">
+    <string>Save as</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionImport_File">
+   <property name="text">
+    <string>Import</string>
+   </property>
+  </action>
+  <action name="actionExport">
+   <property name="text">
+    <string>Export</string>
+   </property>
+  </action>
+  <action name="actionCovert">
+   <property name="text">
+    <string>Covert</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
