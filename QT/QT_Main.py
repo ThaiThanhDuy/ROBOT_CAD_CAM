@@ -545,7 +545,7 @@ class Ui_MainPage(object):
         self.pushButton_3.setText(_translate("MainPage", "Excute"))
         self.pushButton_6.setText(_translate("MainPage", "Connect"))
         self.Toolbar.setTabText(self.Toolbar.indexOf(self.tab_Excute), _translate("MainPage", "Excute"))
-        self.label_name_file.setText(_translate("MainPage", "ROBOT ARM"))
+        self.label_name_file.setText(_translate("MainPage", "ROBOT CNC"))
         self.menuFile.setTitle(_translate("MainPage", "File"))
         self.menuEdit.setTitle(_translate("MainPage", "Edit"))
         self.menuView.setTitle(_translate("MainPage", "View"))

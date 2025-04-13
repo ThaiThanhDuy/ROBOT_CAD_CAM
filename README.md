@@ -8,17 +8,23 @@
   ```bash
   python3 --version
   ```
-- Phiên bản Python đang sử dụng là `3.13`.
+- Phiên bản Python đang sử dụng là `3.10`.
+- Tải python nếu chưa có.
+  ```bash
+  sudo apt install python3.10-venv
+  ```
 2. Tạo môi trường ảo
 - Di chuyển đến thư mục dự án trong terminal hoặc command prompt.
 - Chạy lệnh sau để tạo môi trường ảo có tên `robot`.
 
     ```bash
-    python3.13 -m venv robot
+    python3 -m venv ~/qt5_env
+
     ```
 3. Kích hoạt môi trường ảo
-- Trên Windows: `robot\Scripts\activate`
-- Trên macOS và Linux: `source .venv/bin/activate`
+   ```bash
+   source ~/qt5_env/bin/activate
+   ```
   
 4.  Cài đặt các thư viện:
 

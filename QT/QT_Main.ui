@@ -1015,7 +1015,7 @@ border-radius: 10px;</string>
      </font>
     </property>
     <property name="text">
-     <string>ROBOT ARM</string>
+     <string>ROBOT CNC</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
